@@ -31,10 +31,10 @@
                 </div>
             </div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Protfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         <div class="header-text">
@@ -53,23 +53,23 @@
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
                 <p> Hi! I'm Priyanka, a passionate student of computer engineering excited to learn and apply my skills in real-world projects.I have experience with tools and technologies like Python, HTML,CSS, DeepLabv3+, and data analysis. Right now, I'm working on a project to detect skin diseases and design websites that are easy to use.I love solving problems and learning new things.Outside of my studies, I enjoy traveling, photography, and discovering new technologies.</p>
-                <div class="tab-title">
-                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                    <p class="tab-links"onclick="opentab('education')">Education</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
 
                 </div>
-                <div class="tab-contents active-tab" id="skills">
+                <div class="tab-contents active-tab" id="Skills">
                     <ul>
                         <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
                         <li><span>Programming Language</span><br>c,c++</li>
                         <li><span>HTML/CSS</span></li>
                     </ul>
                 </div>
-                <div class="tab-contents" id="education">
+                <div class="tab-contents" id="Education">
                     <ul>
-                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
-                        <li><span>Programming Language</span><br>c,c++</li>
-                        <li><span>HTML/CSS</span></li>
+                        <li><span>Bachelor of computer Engineering</span><br> From Advanced college of Engineering and Management<br>May, 2020-present</li>
+                        <li><span>High School</span><br>From Shikshadeep higher Secondary School<br>2018-2020 </li>
+                        <li><span>SLC</span><br>From Little Flower Secondary School<br> 2006-2018</li>
                     </ul>
                 </div>
 
@@ -89,7 +89,7 @@
                     <h3>FACE RECOGNITION BASED ATTENDANCE SYSTEM</h3>
                     <p>Developed an automated attendance system using the LBPH algorithm.
                         Enabled real-time face recognition with a user-friendly interface.</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://github.com/ydvpriyanka/Minorproject"><i class="fas fa-external-link-alt"></i></a>
 
                     
                 </div>
@@ -100,13 +100,13 @@
                     <h3>SKIN DISEASES SEGMENTATION</h3>
                     <p>Implemented skin disease segmentation using DeepLabv3+ for precise region detection.
                         Enhanced medical image analysis with accurate and efficient segmentation.</p>
-                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    <a href="https://github.com/ydvpriyanka/major-project"><i class="fas fa-external-link-alt"></i></a>
 
                     
                 </div>
             </div>
         </div>
-        <a href="#" class="btn">see more</a>
+        <a href="https://github.com/ydvpriyanka/Student-record" class="btn">see more</a>
     </div>
 </div>
 
@@ -122,7 +122,7 @@
                 <div class="social-icons">
                     <a href=""><i class="fab fa-facebook"></i></a>
                     <a href=""><i class="fab fa-instagram"></i></a>
-                    <a href=""><i class="fab fa-github"></i></a>
+                    <a href="https://github.com"><i class="fab fa-github"></i></a>
                     <a href=""><i class="fab fa-facebook-messenger"></i></i></a>
                 </div>
                 <a href="images/cv.pdf" download class="btn btn2">Download CV</a>
@@ -153,7 +153,7 @@
             tablink.classList.remove("active-link");
         }
         for(tabcontent of tabcontents){
-            tabcontents.classList.remove("active-tab");
+            tabcontent.classList.remove("active-tab");
         }
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
